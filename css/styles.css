@@ -239,7 +239,7 @@ button {
   display: block;
   position: relative;
 
-  margin-top: 4px;
+  margin: 4px 0 10px 0;
 }
 
 .modal-name-input {
@@ -263,7 +263,7 @@ button {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .icon-name {
@@ -302,7 +302,7 @@ button {
   display: block;
   position: relative;
 
-  margin-top: 4px;
+  margin: 4px 0 10px 0;
 }
 
 .modal-tel-input {
@@ -325,7 +325,7 @@ button {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .icon-tell {
@@ -365,7 +365,7 @@ button {
   display: block;
   position: relative;
 
-  margin-top: 4px;
+  margin: 4px 0 10px 0;
 }
 
 .modal-mail-input {
@@ -389,7 +389,7 @@ button {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .icon-mail {
@@ -414,6 +414,12 @@ button {
 }
 
 /*  ========= Comment input  =========  */
+
+.comment-wraper {
+  display: block;
+
+  margin: 4px 0 20px 0;
+}
 
 .modal-comment {
   font-weight: 400;
@@ -449,7 +455,7 @@ button {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .modal-comment-text:focus,
