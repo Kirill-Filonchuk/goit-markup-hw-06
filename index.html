@@ -340,8 +340,9 @@
 
 <!--Footer same in other pages-->
     <footer class="footer">
-        <div class="container">
+      <div class="container">
         <div class="footer-section">
+
             <div class="footer-logo-adress">
                 <div class="footer-logo">
                     <a href="./index.html" class="logo" lang="en">Web<span
@@ -354,13 +355,14 @@
                     <ul class="address-list list">
                         <li class="items"><a href="https://goo.gl/maps/gbBX1J2FMPTJKqRh9" class="address-office"> г. Киев, б-р Леси
                                 Украинки, 26</a></li>
-                        <!--пр-т Леси Украинки нет в Киеве, а есть б-р Леси Украинки-->
+                        
                         <li class="items"><a href="mailto:info@example.com" class="address-mail">info@example.com</a></li>
                         <li class="items"><a href="tel:+380991111111" class="adress-tel">+38 099 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
-                <div class="footer-social">
+
+            <div class="footer-social">
                 <b class="footer-call">присоединяйтесь</b>
                 <ul class="footer-social-list list">
                     <li class="footer-social-list-items"><a class="footer-social-list-link" href="#">
@@ -389,22 +391,80 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="form-footer">
+                <b class="text">Подпишитесь на рассылку</b>
+                <form class="sign-form" name="sign" valid>
+                    <input class="sign-input" type="email" name="sign" placeholder="E-mail">
+                    <button class="sign-btn" type="submit">
+                        <span class="sign-btn-text">Подписаться</span>
+                        <svg class="sign-icon" width="24px" height="24px">
+                            <use href="./images/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
         </div>
-            
-        </div>
+
+      </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
 
-        <div class="modal">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum magni nam fugiat ad obcaecati, maiores qui omnis veniam architecto voluptatibus voluptatem, at sit et explicabo ducimus ratione placeat corrupti autem.</p>
+<!-- =========  Modal Form =========  -->
 
+        <div class="modal">
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+           
             <button data-modal-close type="button" class="modal-button">
 <svg class="modal-button-icon" width="11px" height="11px">
-    <!-- <use href="./images/sprite.svg#close-black-18dp"></use> -->
     <use href="./images/sprite.svg#close-vector"></use>
 </svg>
             </button>
+
+            <form action="#" class="modal-form" name="modal-studio" valid>
+                <label class="modal-name">Имя
+                  <span class="name-wrapper"> 
+                    <input type="text" name="modal-user-name" class="modal-name-input">
+                    <svg class="icon-name" width="18px" height="18px">
+                        <use href="./images/sprite.svg#person-black-18dp-1"></use>
+                    </svg>
+                  </span>
+                </label>
+               
+
+                <label class="modal-tel">Телефон
+                    <span class="tell-wrapper">
+                        <input type="tel" name="modal-user-tel" class="modal-tel-input">
+                        <svg class="icon-tell" width="18px" height="18px">
+                            <use href="./images/sprite.svg#phone-black-18dp-1"></use>
+                        </svg>
+                    </span>
+                </label>
+                
+                <label class="modal-mail">Почта
+                    <span class="mail-wraper">
+                        <input type="mail" name="modal-user-mail" class="modal-mail-input">
+                        <svg class="icon-mail" width="18px" height="18px">
+                            <use href="./images/sprite.svg#email-black-18dp-1"></use>
+                        </svg>
+                    </span>
+                </label>
+                
+
+                <label class="modal-comment">Комментарий
+                    <textarea class="modal-comment-text" name="modal-textarea" placeholder="Введите текст"></textarea>
+                </label>
+                
+
+                <input type="checkbox" id="custom-btn" name="modal-policy" class="modal-check-kastom">
+                <label for="custom-btn" class="modal-check-policy">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="agreement-policy" href="#">Условия договора</a>                   
+                </label>
+
+                <button type="submit" class="modal-form-btn"><span class="modal-btn-text">Отправить</span></button>
+            </form>
+
         </div>
 
     </div>

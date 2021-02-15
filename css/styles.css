@@ -36,6 +36,7 @@ border-radius: 4px;
 antenna, astronaut, clock, diagram,  - #212121 and #2196f3
 yaco, tagline, twitter, linkedin, instagram, facebook, companytag, company, brand, fosterpeters - #afb1b8
 smartphone, envelope - #757575
+HW06 icon
 
 */
 :root {
@@ -124,7 +125,7 @@ button {
   overflow: hidden;
 }
 
-/* ========= Modal ========#close-vector=#close-black-18dp */
+/* ========= Modal ======== */
 
 .backdrop.is-hidden {
   visibility: hidden;
@@ -190,6 +191,367 @@ button {
 .modal-button-icon {
   width: 11px;
   height: 11px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-icon:hover,
+.modal-button-icon:focus {
+  fill: var(--accent-color);
+}
+
+/* ========= Modal form ========= */
+
+.modal-title {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--second-text-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  ========= Name input  =========  */
+
+.modal-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.name-wrapper {
+  display: block;
+  position: relative;
+
+  margin-top: 4px;
+}
+
+.modal-name-input {
+  display: block;
+
+  width: 100%;
+  height: 40px;
+
+  padding-left: 42px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-bottom: 10px;
+}
+
+.icon-name {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-name-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-name-input:focus + .icon-name {
+  fill: var(--accent-color);
+}
+
+/*  ========= Tel input  =========  */
+
+.modal-tel {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.tell-wrapper {
+  display: block;
+  position: relative;
+
+  margin-top: 4px;
+}
+
+.modal-tel-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+
+  padding-left: 42px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-bottom: 10px;
+}
+
+.icon-tell {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-tel-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-tel-input:focus + .icon-tell {
+  fill: var(--accent-color);
+}
+
+/*  ========= Mail input  =========  */
+
+.modal-mail {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.mail-wraper {
+  display: block;
+  position: relative;
+
+  margin-top: 4px;
+}
+
+.modal-mail-input {
+  display: block;
+
+  width: 100%;
+  height: 40px;
+
+  padding-left: 42px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-bottom: 10px;
+}
+
+.icon-mail {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-mail-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-mail-input:focus + .icon-mail {
+  fill: var(--accent-color);
+}
+
+/*  ========= Comment input  =========  */
+
+.modal-comment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.modal-comment-text {
+  display: block;
+  width: 100%;
+  height: 120px;
+
+  margin-top: 4px;
+
+  padding: 12px 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  resize: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-bottom: 20px;
+}
+
+.modal-comment-text:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-comment-text::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/*  ========= Custom Checkbox  =========  */
+
+.modal-check-policy::before {
+  content: '';
+  display: inline-block;
+  background-size: contain;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+
+  border-radius: 2px;
+
+  background-image: url('../images/icon_no_check.svg');
+
+  background-color: var(--primary-bg-color);
+
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check-kastom:checked ~ .modal-check-policy::before {
+  background-image: url('../images/icon_check_no_bg.svg');
+  background-color: var(--accent-color);
+}
+
+.modal-check-kastom {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.modal-check-policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+
+  margin-bottom: 30px;
+}
+
+.agreement-policy {
+  color: var(--accent-color);
+}
+
+.modal-check-policy {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*  ========= Modal Button  =========  */
+
+.modal-form-btn {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+
+  padding: 10px 55px 10px 56px;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-bg-color);
+
+  border: none;
+  /* outline: none; */
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--button-hover-hero-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ========= Header ========= */
@@ -224,7 +586,7 @@ button {
   color: var(--header-logo-studio-color);
 }
 
-/* ========= Navigation height 80px ========= */
+/* ========= Navigation height ========= */
 .navigation {
   display: flex;
   align-items: center;
@@ -813,6 +1175,106 @@ button {
   height: 20px;
 
   fill: currentColor;
+}
+
+/* ======= Footer Form ======= */
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+
+  /* margin-left: auto; */
+  margin-left: 93px;
+}
+
+.form-footer .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+
+  margin-bottom: 20px;
+}
+
+.sign-input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--footer-bg-color);
+
+  padding: 15px 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-bg-color);
+}
+
+.sign-input:focus {
+  outline: none;
+}
+
+.sign-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: var(--footer-rare-text-color);
+}
+
+.sign-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 28px 10px 29px;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--accent-color);
+
+  border: none;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.sign-btn:hover,
+.sign-btn:focus {
+  /* background-color: var(--button-hover-hero-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
+.sign-btn-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  letter-spacing: 0.06em;
+
+  color: var(--primary-bg-color);
+}
+
+/* .sign-btn-text:hover,
+.sign-btn-text:focus  */
+
+.sign-icon {
+  fill: var(--primary-bg-color);
 }
 
 /* ======= CSS rules for Portfolio.html ======= */
